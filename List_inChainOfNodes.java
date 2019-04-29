@@ -45,7 +45,7 @@ public class List_inChainOfNodes{
         String stringRep = size() + " elements [";
 
         for( Node node = headSentinel.getNextNode()
-           ; node != tailSentinel;
+           ; node != tailSentinel
            ; node = node.getNextNode() )
             stringRep += node.getCargo() + ",";
         return stringRep + "]";
